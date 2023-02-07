@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./network.css">
+</head>
+
+<body>
+
+<div class="content is-normal"><h3>48385830</h3>
+ 
+    <ul>
+        <li>Background in blue: has equal or better mean of accs than GT.</li>
+        <li>Background in green: has statistically significant accs than GT.</li>
+    </ul>
+    </div>
+
+<table class="table">
+<tr><th>Increase in Acc</th><th>Node Id</th><th>Depth</th><th>Changed hyp (compared to parent)</th></tr>
+<tr class="is-ss"><td>0.789</td><td>360</td><td>2</td><td>loss: mean_squared_error --> hinge</td></tr>
+<tr><td>0.779</td><td>350</td><td>2</td><td>act2: None --> sigmoid</td></tr>
+<tr><td>0.778</td><td>344</td><td>2</td><td>act2: None --> softmax</td></tr>
+<tr><td>0.773</td><td>359</td><td>2</td><td>loss: mean_squared_error --> squared_hinge</td></tr>
+<tr><td>0.749</td><td>347</td><td>2</td><td>act2: None --> softsign</td></tr>
+<tr><td>0.746</td><td>349</td><td>2</td><td>act2: None --> tanh</td></tr>
+<tr><td>0.735</td><td>97</td><td>1</td><td>optimizer: sgd --> adadelta</td></tr>
+<tr><td>0.701</td><td>343</td><td>2</td><td>act2: None --> elu</td></tr>
+<tr class="is-ss"><td>0.639</td><td>267</td><td>2</td><td>loss: mean_squared_error --> hinge</td></tr>
+<tr><td>0.634</td><td>123</td><td>2</td><td>ki2: RandomNormal --> truncated_normal</td></tr>
+<tr><td>0.633</td><td>127</td><td>2</td><td>ki2: RandomNormal --> glorot_uniform</td></tr>
+<tr><td>0.632</td><td>118</td><td>2</td><td>ki2: RandomNormal --> zeros</td></tr>
+<tr><td>0.632</td><td>119</td><td>2</td><td>ki2: RandomNormal --> ones</td></tr>
+<tr><td>0.632</td><td>120</td><td>2</td><td>ki2: RandomNormal --> constant</td></tr>
+<tr><td>0.632</td><td>122</td><td>2</td><td>ki2: RandomNormal --> random_uniform</td></tr>
+<tr><td>0.632</td><td>124</td><td>2</td><td>ki2: RandomNormal --> orthogonal</td></tr>
+<tr><td>0.632</td><td>126</td><td>2</td><td>ki2: RandomNormal --> glorot_normal</td></tr>
+<tr class="is-bt"><td>0.632</td><td>257</td><td>2</td><td>act2: None --> sigmoid</td></tr>
+<tr><td>0.631</td><td>121</td><td>2</td><td>ki2: RandomNormal --> random_normal</td></tr>
+<tr><td>0.631</td><td>125</td><td>2</td><td>ki2: RandomNormal --> lecun_uniform</td></tr>
+<tr><td>0.631</td><td>129</td><td>2</td><td>ki2: RandomNormal --> lecun_normal</td></tr>
+<tr><td>0.630</td><td>130</td><td>2</td><td>ki2: RandomNormal --> he_uniform</td></tr>
+<tr><td>0.625</td><td>268</td><td>2</td><td>loss: mean_squared_error --> categorical_hinge</td></tr>
+<tr><td>0.624</td><td>128</td><td>2</td><td>ki2: RandomNormal --> he_normal</td></tr>
+<tr><td>0.621</td><td>251</td><td>2</td><td>act2: None --> softmax</td></tr>
+<tr><td>0.617</td><td>158</td><td>2</td><td>act2: None --> softmax</td></tr>
+<tr><td>0.603</td><td>256</td><td>2</td><td>act2: None --> tanh</td></tr>
+<tr><td>0.602</td><td>109</td><td>2</td><td>ki1: RandomNormal --> random_uniform</td></tr>
+<tr><td>0.601</td><td>254</td><td>2</td><td>act2: None --> softsign</td></tr>
+<tr><td>0.600</td><td>68</td><td>1</td><td>act2: None --> softsign</td></tr>
+<tr><td>0.596</td><td>356</td><td>2</td><td>loss: mean_squared_error --> mean_absolute_error</td></tr>
+<tr><td>0.591</td><td>269</td><td>2</td><td>loss: mean_squared_error --> logcosh</td></tr>
+<tr><td>0.587</td><td>266</td><td>2</td><td>loss: mean_squared_error --> squared_hinge</td></tr>
+<tr><td>0.571</td><td>346</td><td>2</td><td>act2: None --> softplus</td></tr>
+<tr><td>0.570</td><td>288</td><td>2</td><td>lr: 3.0 --> 0.3</td></tr>
+<tr><td>0.544</td><td>263</td><td>2</td><td>loss: mean_squared_error --> mean_absolute_error</td></tr>
+<tr><td>0.540</td><td>112</td><td>2</td><td>ki1: RandomNormal --> lecun_uniform</td></tr>
+<tr><td>0.529</td><td>65</td><td>1</td><td>act2: None --> softmax</td></tr>
+<tr><td>0.524</td><td>111</td><td>2</td><td>ki1: RandomNormal --> orthogonal</td></tr>
+<tr><td>0.522</td><td>250</td><td>2</td><td>act2: None --> elu</td></tr>
+<tr><td>0.517</td><td>351</td><td>2</td><td>act2: None --> hard_sigmoid</td></tr>
+<tr><td>0.506</td><td>116</td><td>2</td><td>ki1: RandomNormal --> lecun_normal</td></tr>
+<tr><td>0.503</td><td>164</td><td>2</td><td>act2: None --> sigmoid</td></tr>
+<tr><td>0.494</td><td>114</td><td>2</td><td>ki1: RandomNormal --> glorot_uniform</td></tr>
+<tr><td>0.482</td><td>110</td><td>2</td><td>ki1: RandomNormal --> truncated_normal</td></tr>
+<tr><td>0.469</td><td>283</td><td>2</td><td>optimizer: sgd --> adadelta</td></tr>
+<tr><td>0.468</td><td>117</td><td>2</td><td>ki1: RandomNormal --> he_uniform</td></tr>
+<tr><td>0.468</td><td>160</td><td>2</td><td>act2: None --> softplus</td></tr>
+<tr><td>0.457</td><td>165</td><td>2</td><td>act2: None --> hard_sigmoid</td></tr>
+<tr><td>0.456</td><td>314</td><td>2</td><td>ki2: RandomNormal --> he_normal</td></tr>
+<tr><td>0.455</td><td>253</td><td>2</td><td>act2: None --> softplus</td></tr>
+<tr><td>0.454</td><td>113</td><td>2</td><td>ki1: RandomNormal --> glorot_normal</td></tr>
+<tr><td>0.441</td><td>214</td><td>2</td><td>ki2: RandomNormal --> random_normal</td></tr>
+<tr><td>0.438</td><td>315</td><td>2</td><td>ki2: RandomNormal --> lecun_normal</td></tr>
+<tr><td>0.437</td><td>215</td><td>2</td><td>ki2: RandomNormal --> random_uniform</td></tr>
+<tr><td>0.426</td><td>107</td><td>2</td><td>ki1: RandomNormal --> constant</td></tr>
+<tr><td>0.414</td><td>310</td><td>2</td><td>ki2: RandomNormal --> orthogonal</td></tr>
+<tr><td>0.411</td><td>175</td><td>2</td><td>loss: mean_squared_error --> categorical_hinge</td></tr>
+<tr><td>0.409</td><td>307</td><td>2</td><td>ki2: RandomNormal --> random_normal</td></tr>
+<tr><td>0.406</td><td>308</td><td>2</td><td>ki2: RandomNormal --> random_uniform</td></tr>
+<tr><td>0.400</td><td>115</td><td>2</td><td>ki1: RandomNormal --> he_normal</td></tr>
+<tr><td>0.392</td><td>105</td><td>2</td><td>ki1: RandomNormal --> zeros</td></tr>
+<tr><td>0.391</td><td>345</td><td>2</td><td>act2: None --> selu</td></tr>
+<tr><td>0.391</td><td>306</td><td>2</td><td>ki2: RandomNormal --> constant</td></tr>
+<tr><td>0.380</td><td>213</td><td>2</td><td>ki2: RandomNormal --> constant</td></tr>
+<tr><td>0.378</td><td>108</td><td>2</td><td>ki1: RandomNormal --> random_normal</td></tr>
+<tr><td>0.376</td><td>173</td><td>2</td><td>loss: mean_squared_error --> squared_hinge</td></tr>
+<tr><td>0.348</td><td>106</td><td>2</td><td>ki1: RandomNormal --> ones</td></tr>
+<tr><td>0.338</td><td>312</td><td>2</td><td>ki2: RandomNormal --> glorot_normal</td></tr>
+<tr><td>0.330</td><td>304</td><td>2</td><td>ki2: RandomNormal --> zeros</td></tr>
+<tr><td>0.324</td><td>218</td><td>2</td><td>ki2: RandomNormal --> lecun_uniform</td></tr>
+<tr><td>0.303</td><td>252</td><td>2</td><td>act2: None --> selu</td></tr>
+<tr><td>0.299</td><td>222</td><td>2</td><td>ki2: RandomNormal --> lecun_normal</td></tr>
+<tr><td>0.297</td><td>309</td><td>2</td><td>ki2: RandomNormal --> truncated_normal</td></tr>
+<tr><td>0.294</td><td>311</td><td>2</td><td>ki2: RandomNormal --> lecun_uniform</td></tr>
+<tr><td>0.294</td><td>220</td><td>2</td><td>ki2: RandomNormal --> glorot_uniform</td></tr>
+<tr><td>0.292</td><td>217</td><td>2</td><td>ki2: RandomNormal --> orthogonal</td></tr>
+<tr><td>0.284</td><td>71</td><td>1</td><td>act2: None --> sigmoid</td></tr>
+<tr><td>0.281</td><td>316</td><td>2</td><td>ki2: RandomNormal --> he_uniform</td></tr>
+<tr><td>0.279</td><td>223</td><td>2</td><td>ki2: RandomNormal --> he_uniform</td></tr>
+<tr><td>0.274</td><td>258</td><td>2</td><td>act2: None --> hard_sigmoid</td></tr>
+<tr><td>0.273</td><td>221</td><td>2</td><td>ki2: RandomNormal --> he_normal</td></tr>
+<tr><td>0.268</td><td>219</td><td>2</td><td>ki2: RandomNormal --> glorot_normal</td></tr>
+<tr><td>0.267</td><td>211</td><td>2</td><td>ki2: RandomNormal --> zeros</td></tr>
+<tr><td>0.258</td><td>162</td><td>2</td><td>act2: None --> relu</td></tr>
+<tr><td>0.230</td><td>313</td><td>2</td><td>ki2: RandomNormal --> glorot_uniform</td></tr>
+<tr><td>0.227</td><td>72</td><td>1</td><td>act2: None --> hard_sigmoid</td></tr>
+<tr><td>0.222</td><td>172</td><td>2</td><td>loss: mean_squared_error --> mean_squared_logarithmic_error</td></tr>
+<tr><td>0.214</td><td>60</td><td>1</td><td>act1: None --> sigmoid</td></tr>
+<tr><td>0.207</td><td>54</td><td>1</td><td>act1: None --> softmax</td></tr>
+<tr><td>0.203</td><td>355</td><td>2</td><td>unit1: 30 --> 15</td></tr>
+<tr><td>0.194</td><td>216</td><td>2</td><td>ki2: RandomNormal --> truncated_normal</td></tr>
+<tr><td>0.135</td><td>326</td><td>2</td><td>bi1: RandomNormal --> glorot_uniform</td></tr>
+<tr><td>0.120</td><td>231</td><td>2</td><td>bi1: RandomNormal --> lecun_uniform</td></tr>
+<tr><td>0.114</td><td>232</td><td>2</td><td>bi1: RandomNormal --> glorot_normal</td></tr>
+<tr><td>0.073</td><td>99</td><td>1</td><td>optimizer: sgd --> adamax</td></tr>
+<tr><td>0.062</td><td>61</td><td>1</td><td>act1: None --> hard_sigmoid</td></tr>
+<tr><td>0.041</td><td>96</td><td>1</td><td>optimizer: sgd --> adagrad</td></tr>
+<tr><td>0.017</td><td>79</td><td>1</td><td>loss: mean_squared_error --> mean_squared_logarithmic_error</td></tr>
+</table>
+</body>
+</html>

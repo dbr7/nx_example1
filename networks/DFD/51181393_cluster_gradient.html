@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./network.css">
+</head>
+
+<body>
+
+<div class="content is-normal"><h3>51181393_cluster</h3>
+ 
+    <ul>
+        <li>Background in blue: has equal or better mean of accs than GT.</li>
+        <li>Background in green: has statistically significant accs than GT.</li>
+    </ul>
+    </div>
+
+<table class="table">
+<tr><th>Decrease in MAE</th><th>Node Id</th><th>Depth</th><th>Changed hyp (compared to parent)</th></tr>
+<tr><td>6.183</td><td>32</td><td>1</td><td>lr: 0.001 --> 0.01</td></tr>
+<tr><td>5.988</td><td>31</td><td>1</td><td>optimizer: rmsprop --> sgd</td></tr>
+<tr><td>0.285</td><td>44</td><td>2</td><td>act1: linear --> exponential</td></tr>
+<tr class="is-ss"><td>0.250</td><td>204</td><td>3</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.237</td><td>99</td><td>2</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-ss"><td>0.188</td><td>466</td><td>4</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-bt"><td>0.185</td><td>150</td><td>3</td><td>epochs: 200 --> 400</td></tr>
+<tr><td>0.177</td><td>64</td><td>2</td><td>lr: 0.001 --> 0.01</td></tr>
+<tr><td>0.163</td><td>175</td><td>3</td><td>lr: 0.001 --> 0.01</td></tr>
+<tr><td>0.155</td><td>141</td><td>3</td><td>batch_size: 32 --> 16</td></tr>
+<tr><td>0.136</td><td>48</td><td>2</td><td>loss: mean_squared_error --> mean_absolute_percentage_error</td></tr>
+<tr class="is-ss"><td>0.131</td><td>422</td><td>4</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-bt"><td>0.120</td><td>98</td><td>2</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.119</td><td>524</td><td>4</td><td>epochs: 400 --> 800</td></tr>
+<tr><td>0.109</td><td>66</td><td>2</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-ss"><td>0.102</td><td>442</td><td>4</td><td>epochs: 400 --> 800</td></tr>
+<tr class="is-ss"><td>0.098</td><td>911</td><td>6</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr><td>0.095</td><td>76</td><td>2</td><td>act1: linear --> exponential</td></tr>
+<tr><td>0.094</td><td>59</td><td>2</td><td>batch_size: 32 --> 16</td></tr>
+<tr class="is-ss"><td>0.083</td><td>726</td><td>5</td><td>epochs: 400 --> 800</td></tr>
+<tr class="is-ss"><td>0.080</td><td>784</td><td>5</td><td>epochs: 400 --> 800</td></tr>
+<tr class="is-ss"><td>0.072</td><td>812</td><td>5</td><td>epochs: 800 --> 1600</td></tr>
+<tr class="is-ss"><td>0.066</td><td>795</td><td>5</td><td>loss: mean_squared_error --> mean_absolute_error</td></tr>
+<tr class="is-ss"><td>0.066</td><td>103</td><td>3</td><td>ki1: glorot_uniform --> random_normal</td></tr>
+<tr class="is-ss"><td>0.065</td><td>713</td><td>5</td><td>loss: mean_squared_error --> mean_absolute_error</td></tr>
+<tr class="is-ss"><td>0.059</td><td>913</td><td>6</td><td>epochs: 800 --> 1600</td></tr>
+<tr class="is-ss"><td>0.056</td><td>857</td><td>6</td><td>optimizer: sgd --> nadam</td></tr>
+<tr class="is-ss"><td>0.056</td><td>129</td><td>3</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-bt"><td>0.054</td><td>467</td><td>4</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-ss"><td>0.051</td><td>883</td><td>6</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.048</td><td>859</td><td>6</td><td>epochs: 400 --> 800</td></tr>
+<tr><td>0.048</td><td>503</td><td>4</td><td>bi1: zeros --> glorot_normal</td></tr>
+<tr><td>0.042</td><td>205</td><td>3</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-ss"><td>0.042</td><td>884</td><td>6</td><td>epochs: 800 --> 1600</td></tr>
+<tr class="is-bt"><td>0.042</td><td>120</td><td>3</td><td>batch_size: 32 --> 16</td></tr>
+<tr class="is-ss"><td>0.038</td><td>1120</td><td>7</td><td>epochs: 1600 --> 3200</td></tr>
+<tr class="is-ss"><td>0.035</td><td>959</td><td>6</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.035</td><td>961</td><td>6</td><td>epochs: 1600 --> 3200</td></tr>
+<tr class="is-ss"><td>0.032</td><td>929</td><td>6</td><td>optimizer: sgd --> nadam</td></tr>
+<tr class="is-ss"><td>0.030</td><td>1219</td><td>7</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.030</td><td>1221</td><td>7</td><td>epochs: 1600 --> 3200</td></tr>
+<tr class="is-ss"><td>0.024</td><td>916</td><td>6</td><td>ki1: glorot_uniform --> random_normal</td></tr>
+<tr class="is-ss"><td>0.024</td><td>931</td><td>6</td><td>epochs: 800 --> 1600</td></tr>
+<tr class="is-ss"><td>0.024</td><td>1101</td><td>7</td><td>loss: mean_squared_error --> mean_absolute_error</td></tr>
+<tr class="is-ss"><td>0.020</td><td>1004</td><td>7</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.020</td><td>1673</td><td>8</td><td>loss: mean_squared_error --> logcosh</td></tr>
+<tr class="is-ss"><td>0.020</td><td>1683</td><td>8</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.020</td><td>1685</td><td>8</td><td>epochs: 1600 --> 3200</td></tr>
+<tr class="is-ss"><td>0.020</td><td>1117</td><td>7</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.019</td><td>361</td><td>4</td><td>bi1: zeros --> random_normal</td></tr>
+<tr class="is-ss"><td>0.019</td><td>362</td><td>4</td><td>unit1: 1 --> 2</td></tr>
+<tr class="is-ss"><td>0.019</td><td>1534</td><td>8</td><td>loss: mean_squared_error --> logcosh</td></tr>
+<tr class="is-ss"><td>0.019</td><td>1544</td><td>8</td><td>lr: 0.01 --> 0.1</td></tr>
+<tr class="is-ss"><td>0.019</td><td>1546</td><td>8</td><td>epochs: 1600 --> 3200</td></tr>
+<tr class="is-ss"><td>0.018</td><td>497</td><td>4</td><td>epochs: 200 --> 400</td></tr>
+<tr class="is-ss"><td>0.018</td><td>1529</td><td>8</td><td>loss: mean_squared_error --> mean_absolute_percentage_error</td></tr>
+<tr class="is-ss"><td>0.018</td><td>1668</td><td>8</td><td>loss: mean_squared_error --> mean_absolute_percentage_error</td></tr>
+<tr class="is-ss"><td>0.017</td><td>1144</td><td>7</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.017</td><td>1191</td><td>7</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.015</td><td>1514</td><td>8</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.015</td><td>1352</td><td>8</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.014</td><td>1326</td><td>8</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.012</td><td>1515</td><td>8</td><td>optimizer: sgd --> nadam</td></tr>
+<tr class="is-ss"><td>0.012</td><td>1378</td><td>8</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.011</td><td>991</td><td>7</td><td>epochs: 400 --> 800</td></tr>
+<tr class="is-ss"><td>0.010</td><td>1217</td><td>7</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.009</td><td>1145</td><td>7</td><td>optimizer: sgd --> nadam</td></tr>
+<tr class="is-ss"><td>0.009</td><td>1059</td><td>7</td><td>optimizer: sgd --> adamax</td></tr>
+<tr class="is-ss"><td>0.009</td><td>1062</td><td>7</td><td>epochs: 1600 --> 3200</td></tr>
+<tr class="is-ss"><td>0.008</td><td>333</td><td>4</td><td>unit1: 1 --> 2</td></tr>
+<tr class="is-ss"><td>0.008</td><td>1060</td><td>7</td><td>optimizer: sgd --> nadam</td></tr>
+<tr class="is-ss"><td>0.008</td><td>997</td><td>7</td><td>bi1: zeros --> glorot_normal</td></tr>
+<tr class="is-ss"><td>0.007</td><td>1006</td><td>7</td><td>epochs: 800 --> 1600</td></tr>
+<tr class="is-ss"><td>0.006</td><td>642</td><td>5</td><td>epochs: 400 --> 800</td></tr>
+<tr class="is-ss"><td>0.006</td><td>993</td><td>7</td><td>ki1: glorot_uniform --> he_normal</td></tr>
+<tr class="is-ss"><td>0.005</td><td>996</td><td>7</td><td>bi1: zeros --> he_normal</td></tr>
+<tr class="is-ss"><td>0.005</td><td>934</td><td>6</td><td>ki1: glorot_uniform --> random_normal</td></tr>
+</table>
+</body>
+</html>
